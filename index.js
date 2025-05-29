@@ -51,10 +51,9 @@
 
 //==================
 
-// inquirer
 
 // const inquirer = require('inquirer');
-// import inquirer from "inquirer";
+// // import inquirer from "inquirer";
 
 // inquirer
 // .prompt([{ type: "input", name: "raqam", message: "raqamni kiriting! " }])
@@ -62,6 +61,7 @@
 //     console.log("man kiritgan raqam qiymati: ", answer.raqam);
 // })
 // .catch((err) => console.log(err));
+
 
 
 // =====================
@@ -77,25 +77,78 @@
 
 
 
-
 // ===============================================================
 
 // UUID
-import { v4 as uuidv4 } from 'uuid';
-import chalk from "chalk";
+// import { v4 as uuidv4 } from 'uuid';
+// import chalk from "chalk";
 
-const random = uuidv4();
+// const random = uuidv4();
 
-console.log(random);
-
-
-const log = console.log;
-
-log(chalk.red(random) );
+// console.log(random);
 
 
+// const log = console.log;
+
+// log(chalk.red(random) );
 
 
 
+
+// ===============================================================================================================================
 
 // Moduce Package FILE
+
+
+
+
+// const calculate = require('./hisob.js');
+// bu sintaksis orqali chaqirib olamiz
+
+
+// console.log(requrie("module").wrapper);
+
+// const result = calculate.kopaytirish(80, 20);
+// console.log('natijja: ' , result);
+// console.log('**********************');
+
+
+// const result2 = calculate.bolish(80, 20);
+// console.log('natijja: ' , result2);
+// console.log('**********************');
+
+
+// const result3 = calculate.qoshish(80, 20);
+// console.log('natijja: ' , result3);
+// console.log('**********************');
+
+
+// const result4 = calculate.ayirish(80, 20);
+// console.log('natijja: ' , result4);
+// console.log('**********************');
+
+
+// *****************************************************************
+
+const Account = require('./account')
+
+// Account.tellMeAboutClass();
+
+const myAccount = new Account('Ali', 200, 8379846287819243);
+
+// myAccount.giveMeDetails();
+
+// myAccount.withdrawMoney(200000);
+// myAccount.giveMeDetails();
+
+
+
+myAccount.makeDeposit(100);
+myAccount.giveMeDetails();
+
+// myAccount.withdrawMoney(500000);
+// myAccount.giveMeDetails();
+
+
+
+
